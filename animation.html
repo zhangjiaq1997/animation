@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{background: #000;}
+	.progress-stripe ul{
+		margin: 0;
+		padding: 0;
+	}
+	.progress-stripe ul li{
+	  float: left;
+	  height: 24px;
+	  margin-left: 1px;
+	  list-style: none;
+	  opacity: .3;
+	}
+	.ral-pro-before{
+	  float: left;
+	  width: 0;
+	  height: 0;
+	  border-width: 24px 3px 0 0;
+	  border-style:solid;
+	  border-color:transparent #19ECEC transparent transparent;
+	}
+	.ral-pro-middle{
+	  float: left;
+	  width: 2px;
+	  height: 24px;
+	  background-color: #19ECEC;
+	}
+	.ral-pro-after{
+	  float: left;
+	  width: 0;
+	  height: 0;
+	  border-width:0 0 24px 3px;
+	  border-style:solid;
+	  border-color:transparent transparent transparent #19ECEC;
+	}
+	.loader {
+	    box-sizing: border-box;
+	    margin-left: 12px;
+	}
+	.line-spin-fade-loader{
+	    position: relative;
+	}
+	.line-spin-fade-loader:after {
+	    content: "";
+	    display: block;
+	    clear:both;
+	}
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(1) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.12s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.12s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(2) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.24s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.24s infinite ;
+	}
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(3) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.36s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.36s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(4) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.48s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.48s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(5) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.6s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.6s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(6) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.72s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.72s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(7) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.84s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.84s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(8) {
+	-webkit-animation: line-spin-fade-loader 2.4s 0.96s infinite ;
+	        animation: line-spin-fade-loader 2.4s 0.96s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(9) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.08s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.08s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(10) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.2s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.2s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(11) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.32s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.32s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(12) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.44s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.44s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(13) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.56s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.56s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(14) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.68s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.68s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(15) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.8s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.8s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(16) {
+	-webkit-animation: line-spin-fade-loader 2.4s 1.92s infinite ;
+	        animation: line-spin-fade-loader 2.4s 1.92s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(17) {
+	-webkit-animation: line-spin-fade-loader 2.4s 2.04s infinite ;
+	        animation: line-spin-fade-loader 2.4s 2.04s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(18) {
+	-webkit-animation: line-spin-fade-loader 2.4s 2.16s infinite ;
+	        animation: line-spin-fade-loader 2.4s 2.16s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(19) {
+	-webkit-animation: line-spin-fade-loader 2.4s 2.28s infinite ;
+	        animation: line-spin-fade-loader 2.4s 2.28s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li:nth-child(20) {
+	-webkit-animation: line-spin-fade-loader 2.4s 2.4s infinite ;
+	        animation: line-spin-fade-loader 2.4s 2.4s infinite ; }
+	.line-spin-fade-loader .progress-stripe ul li {
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes line-spin-fade-loader {
+	0%{
+	opacity: .3
+	}
+	50% {
+	opacity: 1; }
+
+	100% {
+	opacity: 0.3; } }
+
+	@keyframes line-spin-fade-loader {
+	0%{
+	opacity: .3
+	}
+	50% {
+	opacity: 1; }
+
+	100% {
+	opacity: 0.3; } }
+	</style>
+</head>
+<body>
+	<div class="loader pull-left">
+        <div class="loader-inner line-spin-fade-loader">
+			<div class="progress-stripe yellow">
+				<ul class="clear">
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+					<li>
+						<div class="ral-pro-before"></div>
+						<div class="ral-pro-middle"></div>
+						<div class="ral-pro-after"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
